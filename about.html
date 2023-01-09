@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Decor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <link rel="icon" type="image" href="favicon/favicon.ico">
+</head>
+
+<body>
+    <section id="banner">
+        <img src="img-decor/logo.jpg" class="logo">
+        <div class="banner-text">
+            <h1>Home-Decor</h1>
+            <p>HOME-DECOR first opened its doors in 2023. <br>  
+                Our mission is to be a one-stop- Arts & Crafts Store for makers and crafters of all kinds. <br> We stock a huge range of affordable products.
+               
+            </p>
+            <div class="banner-btn1">
+                <a href="about.html"><span></span>Thank You❤️</a>
+                <a href="#"><span></span>Visit Again!</a>
+            </div>  
+        </div>
+    </section>
+
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#banner">HOME</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <a href="index.html"><img src="img-decor/backlogo.png" id="menu"></a>
+    </div>
+    
+    
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var menu = document.getElementById("menu")
+    
+            sideNav.style.right = "-250px";
+    
+            menuBtn.onclick = function () {
+                if (sideNav.style.right == "-250px") {
+                    sideNav.style.right = "0";
+                    menu.src = "img-decor/close.png";
+                }
+                else {
+                    sideNav.style.right = "-250px";
+                    menu.src = "img-decor/menu.png";
+                }
+            }
+    
+            var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1000,
+        speedAsDuration: true
+    });
+        </script>
+    </body>
+    
+    </html>
+</body>    
